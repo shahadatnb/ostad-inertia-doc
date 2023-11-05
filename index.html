@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>InertiaJs</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="Bootstrap 4 Template For Software Startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head> 
+
+<body class="docs-page">    
+    <header class="header fixed-top">	    
+        <div class="branding docs-branding">
+            <div class="container-fluid position-relative py-2">
+                <div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
+	                    <span></span>
+	                    <span></span>
+	                    <span></span>
+	                </button>
+	                <div class="site-logo"><a class="navbar-brand" href="#"><span class="logo-text">Inertia<span class="text-alt">JS</span></span></a></div>    
+                </div><!--//docs-logo-wrapper-->
+            </div><!--//container-->
+        </div><!--//branding-->
+    </header><!--//header-->
+    
+    
+    <div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Comparison of SSR and CSR:</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Inertia.js Features</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Installation</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Step 1: Set up a Laravel project:</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Step 2: Install Inertia.js:</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-3">Step 3: Set up the frontend scaffolding:</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-4">Step 4: Create a component:</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-5">Step 5: Create a route and controller:</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-6">Step 6: Update the main layout file:</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-7">Step 7: Load the Inertia.js app in your main JavaScript file:</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-2-8">Step 8: Test your Inertia.js application:</a></li>
+				    <li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-box"></i></span>Conclusion</a></li>
+			    </ul>
+
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Introduction <span class="docs-time"></span></h1>
+					    <section class="docs-intro">
+						    <p>As an experienced Laravel developer, I understand that diving into the world of web development can be overwhelming, especially when faced with choosing the right tools and frameworks. One such tool that has gained popularity in recent years is Inertia.js. In this article, I will guide you, a fresher in Laravel, through the concept of Inertia.js, its benefits, and how to implement it in your Laravel applications. Let’s get started!</p>
+						</section><!--//docs-intro-->
+				    </header>
+				    <section class="docs-section" id="item-1-1">
+						<h2 class="section-heading">Comparison of SSR and CSR</h2>
+                        <p>SSR (Server-Side Rendering) and CSR (Client-Side Rendering) are two different approaches to rendering web pages. Here are some key differences between the two:</p>
+
+<h2>SSR:</h2>
+<ol>
+<li>The initial HTML content is generated on the server and sent to the client.</li>
+<li>The server is responsible for generating the HTML content, which can improve performance and SEO ranking.</li>
+<li>The server needs to be configured to handle SSR, which can be more complex than CSR.</li>
+</ol>
+<h2>SCSR:</h2>
+<ol>
+<li>The initial HTML content is generated on the client using JavaScript.</li>
+<li>The client is responsible for generating the HTML content, which can improve performance and user experience.</li>
+<li>The server only needs to serve the initial HTML content and static assets, which can be simpler than SSR.</li>
+</ol> 
+<p>In summary, SSR is better for SEO and can improve performance, but it requires more server configuration. CSR is better for user experience and can improve performance, but it requires more client-side code. The choice between SSR and CSR depends on the specific needs of the application.</p>
+                      
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-1-2">
+						<h2 class="section-heading">Inertia.js Features</h2>
+<p>	Inertia.js is a powerful JavaScript framework that provides a set of key features for building modern web applications with a single-page architecture.</p>
+<p> Here are some of the key features of Inertia.js:</p>
+<ol>
+<li>Data-driven UI: Inertia.js allows for a unidirectional data flow between the server and the client, which makes it easy to build data-driven user interfaces. The server generates the initial HTML content and sends it to the client as a JSON payload. Subsequent updates to the content are sent from the server to the client as JSON payloads. This helps to simplify the development process and reduces the amount of code needed to build a modern web application.</li>
+
+<li>Client-side routing: Inertia.js provides a client-side routing solution that is built on top of Vue Router. This means that the client can handle routing and rendering of pages without making additional requests to the server. This can help to improve performance and user experience.</li>
+
+<li>Shared controllers: Inertia.js allows for shared controllers between the server and the client. This means that the server and client can share the same controller logic, which can help to reduce code duplication and improve maintainability.</li>
+
+						
+						
+					</section><!--//section-->					
+					
+			    
+			    <article class="docs-article" id="section-2">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Installation</h1>
+					    <section class="docs-intro">
+						    <p>To implement Inertia.js in your Laravel application, you’ll need to follow a few steps. Let’s break it down:</p>
+						</section><!--//docs-intro-->
+				    </header>
+				     <section class="docs-section" id="item-2-1">
+						<h2 class="section-heading">Step 1: Set up a Laravel project:</h2>
+						<p>If you haven’t already, start by creating a new Laravel project. You can do this by using the Laravel installer or Composer.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-2">
+						<h2 class="section-heading">Step 2: Install Inertia.js:</h2>
+						<p>Next, you’ll need to install the Inertia.js package and its dependencies. Open your terminal and run the following command:</p>
+
+	<code>composer require inertiajs/inertia-laravel</code>
+<p>This command installs the Inertia.js Laravel adapter along with the Inertia.js package itself.</p>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-3">
+						<h2 class="section-heading">Step 3: Set up the frontend scaffolding:</h2>
+						<p>Laravel provides frontend scaffolding using Laravel Mix, which simplifies the setup of your frontend assets. Run the following command to set up the scaffolding:</p>
+
+<code>php artisan inertial:install</code>
+<p>This command installs the necessary frontend dependencies, including Vue.js, React, or Svelte, depending on your preference.</p>
+					</section><!--//section-->
+
+				     <section class="docs-section" id="item-2-4">
+						<h2 class="section-heading">Step 4: Create a component:	</h2>
+						<p>In Inertia.js, a component represents a page or a reusable UI element. Let’s create an example component called “Welcome.vue” inside the `resources/js/Pages` directory. Here’s a basic component structure:</p>
+					<code>
+						vue<br/>
+						&lt;template&gt; <br/>
+						&lt;div&gt; <br/>
+						&lt;h1&gt;Welcome to My Inertia.js Application!&lt;/h1&gt; <br/>
+						&lt;p&gt;Here&rsquo;s some content for the page.&lt;/p&gt; <br/>
+						&lt;/div&gt; <br/>
+						&lt;/template&gt;<br/>
+					</code>
+				</code><!--//section-->
+					
+					<section class="docs-section" id="item-2-5">
+						<h2 class="section-heading">Step 5: Create a route and controller:</h2>
+						<p>In Laravel, routes define the URL endpoints of your application. Open the `routes/web.php` file and create a route for the example component:</p>
+						<code>
+							&lt;?php<br/>
+							use App\Http\Controllers\WelcomeController;<br/>
+							Route::get(‘/’, [WelcomeController::class, ‘index’])->name(‘welcome’);<br/>
+						</code>
+						<p>Next, create the corresponding controller. Run the following command in your terminal:</p>
+						<code>
+							php artisan make:controller WelcomeController
+						</code>
+						<p>Open the newly created controller and add the `index` method:</p>
+						<code>
+							&lt;?php<br/>
+							use Inertia\Inertia;<br/><br/>
+
+							public function index()<br/>
+							{<br/>
+							return Inertia::render('Welcome');<br/>
+							}<br/>
+						</code>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-6">
+						<h2 class="section-heading">Step 6: Update the main layout file:</h2>
+						<p>Inertia.js requires a layout file that acts as the entry point for your application. Open the `resources/views/app.blade.php` file and replace its contents with:</p>
+						<code>
+							&lt;?php<br/>
+							&lt;!DOCTYPE html&gt; &lt;html lang=&quot;{{ str_replace('_', '-', app()-&gt;getLocale()) }}&quot;&gt; &lt;head&gt; &lt;! - Your head content &rarr;<br/>
+							&lt;/head&gt; &lt;body&gt; @inertia <br/>
+							&lt;! - Your script tags and other content &rarr;<br/>
+							&lt;/body&gt;<br/>
+							&lt;/html&gt;
+						</code>
+					</section><!--//section-->
+
+				     <section class="docs-section" id="item-2-7">
+						<h2 class="section-heading">Step 7: Load the Inertia.js app in your main JavaScript file:</h2>
+						<p>Open the `resources/js/app.js` file and update it as follows:</p>
+						<code>
+							import { createApp, h } from ‘vue’; <br/>
+							import { createInertiaApp } from ‘@inertiajs/inertia-vue3’;<br/><br/>
+
+							createInertiaApp({<br/>
+							resolve: (name) => require(`./Pages/${name}`),<br/>
+							setup({ el, app, props }) {<br/>
+							createApp({ render: () => h(app, props) }).mount(el);<br/>
+							},<br/>
+							});
+						</code>
+					</section><!--//section-->
+					
+					<section class="docs-section" id="item-2-8">
+						<h2 class="section-heading">Step 8: Test your Inertia.js application:</h2>
+						<p>Start your Laravel development server by running `php artisan serve`. Visit the specified URL in your browser, and you should see the “Welcome to My Inertia.js Application!” message rendered by your component.</p>
+					</section><!--//section-->
+					
+			    </article><!--//docs-article-->
+			    
+			    <article class="docs-article" id="section-3">
+				    <header class="docs-header">
+					    <h1 class="docs-heading">Conclusion</h1>
+					    <section class="docs-intro">
+						    <p>Inertia.js is a revolutionary framework that simplifies the creation of fully client-side rendered single-page applications (SPAs) while leveraging the familiarity of existing server-side patterns. By utilizing server-side infrastructure and offloading data fetching and state management to the server, Inertia.js eliminates the complexity typically associated with modern SPAs. With Inertia.js, developers can enjoy the benefits of client-side rendering without compromising on simplicity, making it an ideal choice for building fast, interactive, and feature-rich web applications.</p>
+						</section><!--//docs-intro-->
+				    </header>
+			    </article><!--//docs-article-->
+			    
+
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+   
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="assets/plugins/smoothscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="assets/js/highlight-custom.js"></script> 
+    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
+    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
+    <script src="assets/js/docs.js"></script> 
+
+</body>
+</html> 
+
